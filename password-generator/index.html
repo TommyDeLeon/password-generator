@@ -20,9 +20,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body
-    class="overflow-hidden px-0 my-5 mx-auto border-0 bd-example m-0 border-0 bg-dark text-white row align-self-center"
-  >
+  <body class="overflow-hidden px-0 my-5 mx-auto bg-dark text-white">
     <div class="container-fluid my-0 mx-auto">
       <div class="container py-2">
         <h1>Generate a <em class="text-success">Random Password</em></h1>
@@ -30,17 +28,17 @@
         <button
           id="pwGenerator-btn"
           type="button"
-          class="btn btn-success px-3 py-2"
+          class="btn btn-success px-3 py-2 mt-1 mb-0 mx auto"
         >
           Generate Passwords
         </button>
         <hr />
       </div>
-      <div class="container p-0 text-center">
-        <div class="align-items-center mt-3 mb-1">
+      <div class="container p-0 text-center mt-1 mb-0 mx-auto">
+        <div class="align-items-center mt-1 mb-0">
           <p
             id="firstPass"
-            class="btn btn-success px-3 py-2 mx-auto"
+            class="btn btn-success px-3 py-2"
             onclick="copy(this)"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
@@ -49,7 +47,7 @@
           </p>
           <p
             id="secondPass"
-            class="btn btn-success px-3 py-2 mx-auto"
+            class="btn btn-success px-3 py-2"
             onclick="copy(this)"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
@@ -57,7 +55,7 @@
             ****************
           </p>
         </div>
-        <p class="lead mt-1">
+        <p class="lead">
           <em>Click the generated password to copy it to your clipboard.</em>
         </p>
         <!-- Modal -->
@@ -107,7 +105,7 @@
           </div>
         </div>
       </div>
-      <div id="password-options" class="container p-2">
+      <div id="password-options" class="container pt-1 mt-1 mb-0 mx-auto">
         <label for="pw-length" class="form-label"
           >Password Length: <span id="pwLengthText">16</span></label
         >

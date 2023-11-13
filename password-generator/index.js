@@ -1,7 +1,7 @@
 const lowercase = "abcdefghijklmnopqrstuvwxyz".split("");
-const uppercase = lowercase.map(letter => letter.toUpperCase());
+const uppercase = lowercase.map((letter) => letter.toUpperCase());
 const numbers = "0123456789".split("");
-const symbols = "!@#$%^&*()_+~`|}{[]\:;?><,./-=".split("");
+const symbols = "!@#$%^&*()_+~`|}{[]:;?><,./-=".split("");
 
 const firstPassword = document.querySelector("#firstPass");
 const secondPassword = document.querySelector("#secondPass");
