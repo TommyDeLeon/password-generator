@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta viewport="width=device-width, initial-scale=1.0" />
+    <meta name="service" content="Password Generator" />
+    <meta name="author" content="Tommy De Leon" />
+    <meta
+      name="description"
+      content="A password generator that generates a random password based on user input."
+    />
+    <title>Password Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body
+    class="overflow-hidden px-0 my-5 mx-auto border-0 bd-example m-0 border-0 bg-dark text-white row align-self-center"
+  >
+    <div class="container-fluid my-0 mx-auto">
+      <div class="container py-2">
+        <h1>Generate a <em class="text-success">Random Password</em></h1>
+        <p class="lead">Never use an insecure password again.</p>
+        <button
+          id="pwGenerator-btn"
+          type="button"
+          class="btn btn-success px-3 py-2"
+        >
+          Generate Passwords
+        </button>
+        <hr />
+      </div>
+      <div class="container p-5 text-center">
+        <div class="align-items-center">
+          <p
+            id="firstPass"
+            class="btn btn-success px-3 py-2 my-1 mx-auto"
+            onclick="copy(this)"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            ****************
+          </p>
+          <p
+            id="secondPass"
+            class="btn btn-success px-3 py-2 my-1 mx-auto"
+            onclick="copy(this)"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            ****************
+          </p>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade text-dark"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Password Copied!
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Thank you for trying my Password Generator! If you want to
+                connect with me, just press the "Connect" button.
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <a
+                  href="https://www.linkedin.com/in/tommy-de-leon-b22bb1276/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  role="button"
+                  >Connect</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="password-options" class="container p-5">
+        <label for="pw-length" class="form-label"
+          >Password Length: <span id="pwLengthText">16</span></label
+        >
+        <input
+          type="range"
+          class="form-range"
+          min="8"
+          max="32"
+          value="16"
+          id="pw-length"
+        />
+        <div class="form-check form-check-inline">
+          <input type="checkbox" id="uppercase" class="form-check-input" />
+          <label for="uppercase" class="form-check-label"
+            >Include Uppercase</label
+          >
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" id="numbers" class="form-check-input" />
+          <label for="numbers" class="form-check-label">Include Numbers</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" id="symbols" class="form-check-input" />
+          <label for="symbols" class="form-check-label">Include Symbols</label>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
