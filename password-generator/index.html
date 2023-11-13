@@ -36,11 +36,11 @@
         </button>
         <hr />
       </div>
-      <div class="container p-5 text-center">
-        <div class="align-items-center">
+      <div class="container p-0 text-center">
+        <div class="align-items-center mt-3 mb-1">
           <p
             id="firstPass"
-            class="btn btn-success px-3 py-2 my-1 mx-auto"
+            class="btn btn-success px-3 py-2 mx-auto"
             onclick="copy(this)"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
@@ -49,7 +49,7 @@
           </p>
           <p
             id="secondPass"
-            class="btn btn-success px-3 py-2 my-1 mx-auto"
+            class="btn btn-success px-3 py-2 mx-auto"
             onclick="copy(this)"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
@@ -57,6 +57,9 @@
             ****************
           </p>
         </div>
+        <p class="lead mt-1">
+          <em>Click the generated password to copy it to your clipboard.</em>
+        </p>
         <!-- Modal -->
         <div
           class="modal fade text-dark"
@@ -104,7 +107,7 @@
           </div>
         </div>
       </div>
-      <div id="password-options" class="container p-5">
+      <div id="password-options" class="container p-2">
         <label for="pw-length" class="form-label"
           >Password Length: <span id="pwLengthText">16</span></label
         >
