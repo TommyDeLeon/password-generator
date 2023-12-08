@@ -34,4 +34,4 @@ Feast your eyes on my sleek password generator webpage:
 ![image](https://github.com/TommyDeLeon/password-generator/assets/144635056/6ac94e85-9fd6-4e96-981a-4dc0ecde03e1)
 
 ## 🔗 Link
-**Check out my Password Generator Webpage:** [Password Generator](https://tommy-password-generator.netlify.app)
+**Check out my Password Generator Webpage:** https://tommy-password-generator.netlify.app
