@@ -26,8 +26,12 @@ Let's personalize our password generator. Implementing user accounts so that use
 
 ## 📸 Visuals
 Feast your eyes on my sleek password generator webpage:
+
 ![image](https://github.com/TommyDeLeon/password-generator/assets/144635056/13f2d11a-f155-48b9-a9dd-7350bc0f1485)
 
+![image](https://github.com/TommyDeLeon/password-generator/assets/144635056/40aeec07-2a92-47a7-8939-34ee970ecfc0)
+
+![image](https://github.com/TommyDeLeon/password-generator/assets/144635056/6ac94e85-9fd6-4e96-981a-4dc0ecde03e1)
 
 ## 🔗 Link
 **Check out my Password Generator Webpage:** [Password Generator](https://tommy-password-generator.netlify.app)
